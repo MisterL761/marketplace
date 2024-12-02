@@ -1,0 +1,38 @@
+.navbar-brand img{
+height: auto;
+width: 10%;
+}
+.navbar a{
+    color: white;
+    font-size: 1rem;
+}
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+.navbar:active {
+    color: aliceblue;
+  }
+  .nav-link:focus {
+    color: rgb(105, 105, 105);
+  }
+  .dropdown-menu {
+    background-color: black;
+  }
+  .nav-link:focus {
+    color: white;
+  }
+  .navbar a:hover {
+    color: white;
+  }
+  .dropdown-item:hover {
+    background-color: rgb(55, 55, 55);
+  }
+  .dropdown-item:active{
+    color: white;
+  }
+  .hero-section{
+    background-image: url(../images/bg-vetement.jpg);
+    min-height:90vh;
+    background-attachment: fixed ;
+  }
