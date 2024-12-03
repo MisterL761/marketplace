@@ -60,7 +60,6 @@ width: 10%;
     background-color:#0a9d00;
     border: #0a9d00 2px;
     border-radius:24px;
-    display:inline-block;
     color:#ffffff;
     font-family:Arial;
     font-size:17px;
@@ -114,4 +113,36 @@ margin-top: 2%;
 }
 .bg-noir{
   background-color: black;
+}
+label{
+  width:100%;
+}
+.newsletter{
+  text-align: center;
+  margin-top: 10%;
+  background-image: url(../images/fond-news.jpg);
+  background-attachment: fixed;
+  background-position-y:100% ;
+  
+
+}
+.newsletter p{
+font-size: 1.5rem;
+font-style:italic;
+color:#ffffff;
+}
+.space{
+  padding: 1%;
+}
+.envoyer {
+  background-color:#0a9d00;
+  border: #0a9d00 2px;
+  border-radius:24px;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-style:italic;
+  padding:10px 20px;
+  text-decoration:none;
+
 }
