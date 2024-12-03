@@ -1,11 +1,17 @@
-.navbar-brand img{
+.logo{
 height: auto;
-width: 10%;
+width: 4%;
+margin-right:33%;
 }
 .navbar a{
     color: white;
     font-size: 1rem;
+    transition: 0.5s;
 }
+.navbar a:hover{
+  scale: 1.3;
+}
+
 .navbar-brand{
     margin: 0;
     padding: 0;
@@ -69,10 +75,12 @@ width: 10%;
     text-decoration:none;
     margin-left: 35%;
     margin-top: 10%;
+    transition: 0.5s;
   }
   .connect:hover {
     background:linear-gradient(to bottom, #000000 5%, #080808 100%);
     background-color:#000000;
+    scale: 1.3;
   }
   .connect:active {
     position:relative;
@@ -100,17 +108,20 @@ margin-top: 2%;
   width: 100%;
   height: auto;
   min-height:325px ;
+  
 }
 .row{
   width: 100%;
   margin-top: 5%;
   margin-left: 0;
+  
 }
 .row p{
   text-align: center;
   font-style: italic;
   font-size: 1.2rem;
 }
+
 .bg-noir{
   background-image: url(../images/magasin-2.jpg);
   background-attachment: fixed;
@@ -147,4 +158,10 @@ color:#ffffff;
   text-decoration:none;
 
 }
-
+.navbar-toggler{
+  justify-content: end;
+  background-color: white;
+}
+.envoyer:hover{
+  background-color: black;
+}
