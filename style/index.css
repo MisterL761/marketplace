@@ -112,7 +112,8 @@ margin-top: 2%;
   font-size: 1.2rem;
 }
 .bg-noir{
-  background-color: black;
+  background-image: url(../images/magasin-2.jpg);
+  background-attachment: fixed;
 }
 label{
   width:100%;
@@ -146,3 +147,4 @@ color:#ffffff;
   text-decoration:none;
 
 }
+
