@@ -63,6 +63,7 @@ h1{
     background-color: rgb(0, 0, 0);
     padding: 5%;
     border: 10rem black;
+    transition: 0.5s;
     
 }
 .cadre img{
@@ -74,4 +75,7 @@ h1{
 }
 .cadre p{
     margin-left:5%;
+}
+.cadre:hover{
+    scale: 1.2;
 }
