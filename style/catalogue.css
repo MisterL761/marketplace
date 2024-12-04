@@ -1,19 +1,24 @@
-body{
-    background-image: url(../images/magasin-2.jpg);
-    background-attachment: fixed;
+body {
+  background-image: url(../images/magasin-2.jpg);
+  background-attachment: fixed;
 }
-
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 .logo {
   height: auto;
   width: 4%;
   margin-right: 33%;
 }
-.navbar a{
-    color: white;
-    font-size: 1rem;
-    transition: 0.5s;
+.navbar a {
+  color: white;
+  font-size: 1rem;
+  transition: 0.5s;
 }
-.navbar a:hover{
+.navbar a:hover {
   scale: 1.3;
 }
 .navbar-brand {
@@ -44,38 +49,45 @@ body{
 .Chercher {
   margin-left: 0.5%;
 }
-h1{
-    text-align: center;
-    color: white    ;
+h1 {
+  text-align: center;
+  color: white;
 }
-.container-article a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.container-article a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-.row{
-    width: 100%;
-    padding: 10%;
+.row {
+  width: 100%;
+  padding: 10%;
 }
-.row img{
-    width: 90%;
+.row img {
+  width: 90%;
 }
-.cadre{
-    background-color: rgb(0, 0, 0);
-    padding: 5%;
-    border: 10rem black;
-    transition: 0.5s;
-    
+.cadre {
+  background-color: rgb(0, 0, 0);
+  padding: 5%;
+  border: 10rem black;
+  transition: 0.5s;
 }
-.cadre img{
-    margin-left: 5%;
-    margin-top: 5%;
+.cadre img {
+  margin-left: 5%;
+  margin-top: 5%;
 }
-.space{
-    margin-top: -18%;
+.space {
+  margin-top: -18%;
 }
-.cadre p{
-    margin-left:5%;
+.cadre p {
+  margin-left: 5%;
 }
-.cadre:hover{
-    scale: 1.2;
+.cadre:hover {
+  scale: 1.2;
+}
+@media (max-width: 426px){
+
+body{
+  background-color: black;
+  background-image: none;
+}
+
 }
