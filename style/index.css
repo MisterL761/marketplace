@@ -171,3 +171,14 @@ color:#ffffff;
 .envoyer:hover{
   background-color: black;
 }
+@media (max-width: 426px){
+.hero-section{
+  background-image: none;
+}
+.cadre{
+  width:100%;
+}
+.connect{
+margin-left: 32%;
+}
+}
