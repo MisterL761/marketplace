@@ -140,9 +140,8 @@ label{
   margin-top: 10%;
   background-image: url(../images/fond-news.jpg);
   background-attachment: fixed;
+  background-position-x:50% ;
   background-position-y:100% ;
-  
-
 }
 .newsletter p{
 font-size: 1.5rem;

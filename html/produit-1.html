@@ -182,27 +182,6 @@
                     alt="Image par défaut"
                   />
                 </button>
-
-                <script>
-                  const imageButton = document.getElementById("image-button");
-                  const buttonImage = document.getElementById("button-image");
-
-                  // Image d'origine et image qui apparaîtra au clic
-                  const defaultImage = "../images/coeur-bw.png"; // Image par défaut
-                  const clickedImage = "../images/coeur-br.jpg"; // Image après le clic
-
-                  imageButton.addEventListener("click", () => {
-                    // Utilisation de getAttribute pour obtenir le chemin relatif de l'image
-                    const currentImage = buttonImage.getAttribute("src");
-
-                    // Vérifie l'image actuelle et change selon l'état
-                    if (currentImage === defaultImage) {
-                      buttonImage.setAttribute("src", clickedImage); // Change l'image
-                    } else {
-                      buttonImage.setAttribute("src", defaultImage); // Rétablit l'image par défaut
-                    }
-                  });
-                </script>
               </div>
             </div>
           </div>
@@ -285,6 +264,26 @@
         </div>
       </div>
     </footer>
+    <script>
+      const imageButton = document.getElementById("image-button");
+      const buttonImage = document.getElementById("button-image");
+
+      // Image d'origine et image qui apparaîtra au clic
+      const defaultImage = "../images/coeur-bw.png"; // Image par défaut
+      const clickedImage = "../images/coeur-br.jpg"; // Image après le clic
+
+      imageButton.addEventListener("click", () => {
+        // Utilisation de getAttribute pour obtenir le chemin relatif de l'image
+        const currentImage = buttonImage.getAttribute("src");
+
+        // Vérifie l'image actuelle et change selon l'état
+        if (currentImage === defaultImage) {
+          buttonImage.setAttribute("src", clickedImage); // Change l'image
+        } else {
+          buttonImage.setAttribute("src", defaultImage); // Rétablit l'image par défaut
+        }
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

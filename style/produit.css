@@ -67,7 +67,6 @@ header{
     margin-top: 5%;
     padding: 5%;
     height: auto;
-    max-height: 92%;
   }
   .cadre img{
     height: auto;
@@ -115,6 +114,7 @@ header{
   background-color: #000;
   color: white;
   padding: 50px 20px;
+  margin-top: 1%;
   
 }
 
