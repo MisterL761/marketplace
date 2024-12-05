@@ -42,10 +42,12 @@
                 <a class="nav-link" href="../html/annonce.html">Annonce</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../html/favoris.html">Vos favoris</a>
+                <a class="nav-link" href="../compte/favoris.html"
+                  >Vos favoris</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../html/profil.html">Profil</a>
+                <a class="nav-link" href="../compte/profil.html">Profil</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -146,15 +148,16 @@
             <div class="col-12 col-md-6 col-lg-6">
               <div class="cadre">
                 <div class="profil">
-                <img src="../images/btp.webp" alt=""><p>Pedro Morais</p>
-              </div>
-                
+                  <img src="../images/btp.webp" alt="" />
+                  <p>Pedro Morais</p>
+                </div>
+
                 <h1>Sweat Eden Park</h1>
                 <br />
                 <p>
                   taille: L <br />
-                  Etat: Très  Bon état <br />
-                  Catégorie: Sweat <br>
+                  Etat: Neuf <br />
+                  Catégorie: Sweat <br />
                   Prix: 80€
                 </p>
                 <br />
@@ -163,45 +166,124 @@
                   <br />
                   <br />
                   Offrez-vous un sweat EdenPark, modèle iconique qui ne se
-                  démode jamais. Portées mais en très bon état, il conserve
-                  sa silhouette classique et intemporelle. Idéales pour un
-                  look décontracté ou streetwear, il est prêt à être
-                  intégré à votre garde-robe quotidienne.
+                  démode jamais. Portées mais en très bon état, il conserve sa
+                  silhouette classique et intemporelle. Idéales pour un look
+                  décontracté ou streetwear, il est prêt à être intégré à votre
+                  garde-robe quotidienne.
                 </p>
                 <br />
                 <a href=""><button class="achat">Contacter</button></a>
                 <!-- <a href=""><img src="../images/coeur-bw.png" alt="" /></a> -->
                 <button class="image-button" id="image-button">
-                  <img id="button-image" src="../images/coeur-bw.png" alt="Image par défaut">
-              </button>
-              
-              <script>
-                  const imageButton = document.getElementById('image-button');
-                  const buttonImage = document.getElementById('button-image');
-              
+                  <img
+                    id="button-image"
+                    src="../images/coeur-bw.png"
+                    alt="Image par défaut"
+                  />
+                </button>
+
+                <script>
+                  const imageButton = document.getElementById("image-button");
+                  const buttonImage = document.getElementById("button-image");
+
                   // Image d'origine et image qui apparaîtra au clic
-                  const defaultImage = '../images/coeur-bw.png'; // Image par défaut
-                  const clickedImage = '../images/coeur-br.jpg'; // Image après le clic
-              
-                  imageButton.addEventListener('click', () => {
-                      // Utilisation de getAttribute pour obtenir le chemin relatif de l'image
-                      const currentImage = buttonImage.getAttribute('src');
-              
-                      // Vérifie l'image actuelle et change selon l'état
-                      if (currentImage === defaultImage) {
-                          buttonImage.setAttribute('src', clickedImage); // Change l'image
-                      } else {
-                          buttonImage.setAttribute('src', defaultImage); // Rétablit l'image par défaut
-                      }
+                  const defaultImage = "../images/coeur-bw.png"; // Image par défaut
+                  const clickedImage = "../images/coeur-br.jpg"; // Image après le clic
+
+                  imageButton.addEventListener("click", () => {
+                    // Utilisation de getAttribute pour obtenir le chemin relatif de l'image
+                    const currentImage = buttonImage.getAttribute("src");
+
+                    // Vérifie l'image actuelle et change selon l'état
+                    if (currentImage === defaultImage) {
+                      buttonImage.setAttribute("src", clickedImage); // Change l'image
+                    } else {
+                      buttonImage.setAttribute("src", defaultImage); // Rétablit l'image par défaut
+                    }
                   });
-              </script>
-              
+                </script>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="h3-footer">Contact</h3>
+          <ul>
+            <li>
+              <a href="mailto:Cinéflix@gmail.com"
+                ><img src="../images/gmail.png" alt="logo gmail" />Emai :
+                ReStyle@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:0646424559"
+                ><img
+                  src="../images/logo-tel.png"
+                  alt="logo telephone"
+                />Téléphone : 0646424559</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.fr/maps/place/10+Rue+du+G%C3%A9n%C3%A9ral+Sarrail,+76000+Rouen/@49.4411767,1.1034718,16z/data=!3m1!4b1!4m6!3m5!1s0x47e0de80037b0b31:0xc44b86a6389ced60!8m2!3d49.4411767!4d1.1034718!16s%2Fg%2F11c2h9ws0b?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                ><img
+                  src="../images/logo-loc.png"
+                  alt="logo localisation"
+                />Adresse : 10 Rue du Général Sarrail</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="h3-footer">Page Principale</h3>
+          <ul>
+            <li><a href="../Index.html">Accueil</a></li>
+            <li><a href="../html/catalogue.html">Catalogue</a></li>
+            <li><a href="../compte/favoris.html">Vos favoris</a></li>
+            <li><a href="../compte/profil.html">Profil</a></li>
+            <li>
+              <a href="../html/mention.html " target="_blank">mention légal </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="h3-footer">Réseaux sociaux</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"
+                target="_blank"
+                ><img
+                  src="../images/facebook.png"
+                  alt="log facebook"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/?lang=fr" target="_blank"
+                ><img
+                  src="../images/twitter.png"
+                  alt="logo twitter"
+                />Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="../images/insta.png"
+                  alt="logo instagram"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
